@@ -7,7 +7,7 @@ jobs:
       - image: amazon/aws-cli
     steps:
       - checkout
-      - run: aws cloudformation deploy --stack-name create_infrastructure --template-file template.yml  --region=us-west-2 
+      - run: aws cloudformation deploy --stack-name create-infrastructure --template-file template.yml  --region=us-west-2 
 
 workflows:
   # Name the workflow "welcome"
